@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Guilherme Machado Dal Castel">
+        <title>NBA - Guilherme Dal Castel</title>
+        <link rel="sortcut icon" href="images/icone-nba.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./style/css.css" type="text/css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body class="bg">
+        <header>
+            <div id="header">
+                <a href="">
+                    <img src="./images/logo-nba.svg" id="logo-nba">
+                </a>
+                <img src="./images/menu-hamburger.svg" id="menu-hamburger">
+                <nav id="menu-opcao-desktop">
+                    <ul id="ul-desktop">
+                        <li><a href="#div-milwauke">Milwauke</a></li>
+                        <li><a href="#nba75">NBA 2021-2022</a></li>
+                        <li><a href="#images-conf">Tabelas</a></li>
+                        <li><a href="#section2">Summer League</a></li>
+                    </ul>
+                    <a href="https://www.nba.com/">
+                        <div id="site-oficial">
+                            <h1>Site Oficial:</h1>
+                            <img src="./images/logo-nba-cor.png">
+                        </div>
+                    </a>
+                </nav>
+            </div>
+            <nav id="menu-opcao-mobile">
+                <ul>
+                    <li><a href="#div-milwauke">Milwauke</a></li>
+                    <li><a href="#nba75">NBA 2021-2022</li>
+                    <li><a href="#images-conf">Tabelas</a></li>
+                    <li><a href="#section2">Summer League</a></li>
+                </ul>
+                <div id="site-oficial">
+                    <h1>Site Oficial:</h1>
+                    <a href="https://www.nba.com/">
+                        <img src="./images/logo-nba-cor.png">
+                    </a> 
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="images" id="div-milwauke">
+                    <img src="./images/milwauke-champ.png" id="milwauke">
+                </div>
+                <div id="listras-1">
+                    <div id="listra-1" class="listras"></div>
+                    <div id="listra-2" class="listras"></div>
+                    <div id="listra-3" class="listras"></div>
+                    <div id="listra-4" class="listras"></div>
+                    <div id="listra-5" class="listras"></div>
+                    <div id="listra-6" class="listras"></div>
+                </div>
+                <img src="./images/Bucks-NBA-Champions-202116x9-Cropped.png" id="champ">
+                <div id="listras-2">
+                    <div id="listra-6" class="listras"></div>
+                    <div id="listra-5" class="listras"></div>
+                    <div id="listra-4" class="listras"></div>
+                    <div id="listra-3" class="listras"></div>
+                    <div id="listra-2" class="listras"></div>
+                    <div id="listra-1" class="listras"></div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="images"> 
+                    <img src="./images/nba75.png" id="nba75">
+                </div>
+                <div id="div-section1">
+                    <div id="texto-section1">
+                        <h1>NBA 2021-2022</h1>
+                        <h2>Liga mais importante do basquete mundial</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a tristique felis, quis efficitur nisi. Nullam non nisl facilisis, accumsan.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed scelerisque metus, vel euismod orci. In in sagittis tellus, et ultrices tortor. Sed molestie in.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id dignissim massa, vel euismod orci.</p>
+                        <div id="images-conf">
+                            <img class="conferencias" id="conferencia-leste" src="./images/conferencia-leste.png">
+                            <img class="conferencias" id="conferencia-oeste" src="./images/conferencia-oeste.png">
+                        </div>
+                    </div>
+                    <div id="images-section1">
+                        <img class="tabelas" id="tabela-leste" src="./images/tabela-leste.png">
+                        <img class="tabelas" id="tabela-oeste" src="./images/tabela-oeste.png">
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="section2">
+                <div class="images" id="div-summerleague">
+                    <img src="./images/summer-league.png" id="summer-league">
+                </div>
+                <div id="texto-section2">
+                    <h1>Summer League 2021</h1>
+                    <h2>Competição formada por Rookies</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in suscipit quam. Vestibulum lobortis risus vitae orci interdum gravida. Pellentesque nec dolor.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi metus justo, dapibus sed lectus vel, sagittis tristique lectus. Mauris eu risus non mauris porta maximus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id dignissim massa. Sed euismod felis scelerisque sem suscipit.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <img src="./images/logo-nba.svg">
+            <div>Guilherme Machado Dal Castel</div>
+            <div>Cimol | INFO 62MA | 2021 </div>
+        </footer>
+        <script>
+            document.querySelector("#menu-opcao-mobile").style.display="none";
+            icon=document.querySelector("#menu-hamburger");
+            icon.onclick= function(){
+                nav=document.querySelector("#menu-opcao-mobile");
+                if(nav.style.display=="none")
+                    nav.style.display="block";
+                else
+                    nav.style.display="none";
+            }
+
+        </script>
+    </body>
+</html>
